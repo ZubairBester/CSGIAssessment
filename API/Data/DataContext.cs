@@ -10,5 +10,9 @@ namespace API.Data
         }
 
         public DbSet<StudentEndOfDay> Students { get; set; }
+
+        public DbSet<StudentEndOfTerm> StudentRecords {get;set;}
+
+        public DbSet<GradeClass> GradeStudent {get;set;}
     }
 }

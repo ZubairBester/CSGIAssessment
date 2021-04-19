@@ -16,7 +16,17 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
   this.getStudents();
+  this.getStudentsRecords();
   } 
+
+  getStudentsRecords() {
+    this.http.get('https://localhost:5001/api/studentsRecords').subscribe(response => {
+      this.students = response;
+    
+    }, error => {
+      console.log(error);
+    })  
+  }
 
   getStudents() {
     this.http.get('https://localhost:5001/api/students').subscribe(response => {
