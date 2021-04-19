@@ -19,12 +19,7 @@ namespace API.Controllers
 
         }
 
-        // [HttpGet]
-        // public async Task<ActionResult<IEnumerable<GradeClass>>> GetGrades()
-        // {
-        //     return await _context.GradeStudent.ToListAsync();
-          
-        // }
+        
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<StudentEndOfDay>>> GetStudents()
@@ -39,13 +34,7 @@ namespace API.Controllers
         //     return await _context.StudentRecords.ToListAsync();
         // }
 
-        //api/grades/3s
-        // [HttpGet("{id}")]
-        // public async Task<ActionResult<GradeClass>>GetGrade(int id)
-        // {
-        //    return await _context.GradeStudent.FindAsync(id);
         
-        // }
         
         //api/students/3
         [HttpGet("{id}")]
