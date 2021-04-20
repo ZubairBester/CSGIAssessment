@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   students : any;
   constructor(private http: HttpClient)
   {
-
+    
   }
   ngOnInit() {
   this.getStudents();
